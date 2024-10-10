@@ -9,6 +9,14 @@ class Animal:
     alive = True
     fed = False
 
+    def eat(self, food):
+        if food.edible:
+            self.fed = True
+            print(f'{self.name} съел {food.name}')
+        else:
+            self.alive = False
+            print(f'{self.name} не стал есть {food.name}')
+
 
 # Растения
 class Plant:
@@ -20,27 +28,12 @@ class Mammal(Animal):
     def __init__(self, name):
         self.name = name
 
-    def eat(self, food):
-        if food.edible:
-            self.fed = True
-            print(f'{self.name} съел {food.name}')
-        else:
-            self.alive = False
-            print(f'{self.name} не стал есть {food.name}')
-
 
 # Хищники
 class Predator(Animal):
     def __init__(self, name):
         self.name = name
 
-    def eat(self, food):
-        if food.edible:
-            self.fed = True
-            print(f'{self.name} съел {food.name}')
-        else:
-            self.alive = False
-            print(f'{self.name} не стал есть {food.name}')
 
 # Цветы
 class Flower(Plant):
