@@ -9,6 +9,7 @@ class Animal:
     alive = True
     fed = False
 
+    # Метод поедания животным растения
     def eat(self, food):
         if food.edible:
             self.fed = True
