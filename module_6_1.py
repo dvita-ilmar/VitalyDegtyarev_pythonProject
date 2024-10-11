@@ -35,7 +35,9 @@ class Mammal(Animal):
 
 # Хищники
 class Predator(Animal):
-    pass
+
+    def __init__(self, name):
+        super().__init__(name)
 
 # Цветы
 class Flower(Plant):
