@@ -8,7 +8,6 @@
 class Animal:
     alive = True
     fed = False
-    name = ''
 
     # Метод поедания животным растения
     def eat(self, food):
@@ -23,7 +22,6 @@ class Animal:
 # Растения
 class Plant:
     edible = False
-    name = ''
 
 # Млекопитающие
 class Mammal(Animal):
