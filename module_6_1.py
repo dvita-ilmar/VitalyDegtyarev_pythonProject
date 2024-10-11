@@ -9,6 +9,9 @@ class Animal:
     alive = True
     fed = False
 
+    def __init__(self, name):
+        self.name = name
+
     # Метод поедания животным растения
     def eat(self, food):
         if food.edible:
@@ -23,29 +26,24 @@ class Animal:
 class Plant:
     edible = False
 
-# Млекопитающие
-class Mammal(Animal):
     def __init__(self, name):
         self.name = name
 
+# Млекопитающие
+class Mammal(Animal):
+    pass
 
 # Хищники
 class Predator(Animal):
-    def __init__(self, name):
-        self.name = name
-
+    pass
 
 # Цветы
 class Flower(Plant):
-    def __init__(self, name):
-        self.name = name
+    pass
 
 # Фрукты
 class Fruit(Plant):
     edible = True
-
-    def __init__(self, name):
-        self.name = name
 
 
 # Запуск
